@@ -1,0 +1,23 @@
+{% extends 'CRUD/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'CRUD/addStyle.css' %}">
+
+<form action="" method="POST">
+	{% csrf_token %}
+
+	<h2>Delete entry</h2>
+
+	<hr>
+
+	<div>
+		<input class="inp" type="text" name="Email" placeholder="Email">
+	</div>
+
+	<div>
+		<button type="submit" class="button">Delete</button>
+	</div>
+</form>
+{% endblock %}

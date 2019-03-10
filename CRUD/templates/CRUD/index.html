@@ -1,0 +1,44 @@
+{% extends 'CRUD/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
+<div class="div-main">
+	<div class="uk-button-group div-btn">
+		<a href="{% url 'add' %}"><button class="uk-button uk-button-primary btn">Add new entry</button></a>
+		<a href="{% url 'update' %}"><button class="uk-button uk-button-secondary btn">Update entry</button></a>
+		<a href="{% url 'delete' %}"><button class="uk-button uk-button-danger btn">Delete entry</button></a>
+	</div>
+</div>
+
+<div class="div-table">
+	<div>
+		<table class="table table-striped table-dark">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				{% for d in data %}
+				<tr>
+					<td>{{ d.FirstName }}</td>
+					<td>{{ d.LastName }}</td>
+					<td>{{ d.Email }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<footer>
+	<h5>For presentation</h5>
+</footer>
+{% endblock %}

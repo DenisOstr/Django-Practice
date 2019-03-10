@@ -1,0 +1,44 @@
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.div-main {
+	background-color: #f0f0f0;
+}
+
+.div-table {
+	/*margin: 30px;*/
+	margin-top: 9%;
+	text-align: center;
+}
+
+.div-btn {
+	margin-left: 23%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+a .btn {
+	margin-left: 50px;
+	margin-top: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn {
+	text-decoration: none;
+	color: #fff;
+}
+
+footer {
+	background-color: #f0f0f0;
+	text-align: right;
+	margin-top: 123px;
+	padding: 25px;
+}
+
+footer h5 {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: 20px;
+	font-size: 17px;
+}
